@@ -121,13 +121,12 @@ nav:hover{
     display: none;
 }
 .articleSection{
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 40px;
-    height: 800px;
-
+    width: 100vw;
 }
 .articleSection h3{
     font-size: 18px;
@@ -163,6 +162,7 @@ span{
     color: #B3B3B3;
 }
 .banner{
+    margin-top: 40px;
     height: 447px;
     width: auto;
     background-image: url(./assets/background2.png);
@@ -193,6 +193,11 @@ span{
 .footer h2{
     color: #fff;
     font-weight: 400;
+}
+.newsletter{
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
 }
 .form{
     margin-top: 20px;
@@ -250,13 +255,14 @@ span{
     position: fixed;
     z-index: 100;
     top: 20px;
-    left: 20px;
+    left: 10px;
     background-color: #FFFFFFCC;
     border: 1px solid #fff;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 80px;
+    justify-content: space-between;
+    padding: 0px 10px 0px 18px;
+    height: 60px;
     width: 90%;
     }
     .logo{
@@ -269,28 +275,50 @@ span{
         height: 13.5px;
     }
     .articleSection {
-        width: 354px;
+        margin-top: 40px;
+        width: 390px;
         height: auto;
     }
     .divArticles {
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: center;  
     }
     .clothes{
         width: 354px;
     }
     .banner{
+        margin-top: 60px;
         width: 390px;
         background-image: url(./assets/backgroundmovile2.png);
+    }
+    .textContainer{
+        top: 340px;
+        left: 30px;
+    }
+    .textContainer h2{
+        height: 45px;
+        font-size: 33px;
+        font-weight: 600;
+    }
+    .textContainer a{
+        margin: 0px;
+    }
+    .newsletter{
+        font-style: italic;
     }
     .footer{
         width: 390px;
     }
     .footer h2{
         font-size: 28px;
+        width: 300px;
+        text-align: center;
+        line-height: normal;
+        margin-bottom: 10px;
     }
     .form{
+ 
         width: 344px;
         height: 50px;
         align-items: center;
