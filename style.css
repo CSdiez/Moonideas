@@ -40,7 +40,6 @@ header{
 }
 nav:hover{
     background-color: #FFFFFF;
-    transition: 0.5s;
 }
 .navLinks{
     display: flex;
@@ -61,25 +60,55 @@ nav:hover{
     text-decoration: none;
     color: #000;
 }
-.navLinks ul li:hover{
-    font-weight: bold;
-}
+
 .navLinks ul li a img{
     margin: 0px 0px 2px 5px;
 }
-.shop{
+.empty{
+    background-color: transparent;
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: -80px;
+    left: 0px;
+}
+.shop .listShop{
     background-color: #fff;
     position: absolute;
+    top: 90px;
+    right: 450px;
     z-index: 200;
     width: 198px;
     height: 264px;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 30px;
+}
+.coleccion .listColeccion{
+    background-color: #fff;
+    position: absolute;
+    top: 90px;
+    right: 340px;
+    z-index: 200;
+    width: 198px;
+    height: 184px;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 30px;
+}
+.navLinks ul li a:hover{
+    font-weight: bold
+}
+.navLinks :hover > ul{
+    display: flex;
 }
 .Icons img{
     margin-left: 20px;
 }
 .Icons{
     display: flex;
-    flex-direction: row;
 }
 .cart{
     display: flex;
@@ -177,14 +206,22 @@ span{
     font-size: 13px;
     width: 80%;
     border-style: none;
+    padding-left: 20px;
+    transition: all 0.6s;
 
+}
+.form input:hover{
+    background-color: #B3B3B3;
 }
 .form input::placeholder {
     color: #000;
-    padding-left: 20px;  
   }
 .form button{
     font-weight: 600;
     background-color: #fff ;
     width: 20%;
+    transition: all 0.6s;
+}
+.form button:hover{
+    background-color: #B3B3B3;
 }
