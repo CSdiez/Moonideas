@@ -248,6 +248,9 @@ span{
         height: 561px;
         width: 100vw;
     }
+    .articleSection {
+        padding-top: 20px;
+    }
     .banner{
         margin-top: 0px;
     }
@@ -257,18 +260,19 @@ span{
         display: none;
     }
     .navMovil{
-    position: fixed;
-    z-index: 100;
-    top: 20px;
-    left: 30px;
-    background-color: #FFFFFFCC;
-    border: 1px solid #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 10px 0px 18px;
-    height: 60px;
-    width: 90%;
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        right: 0;
+        margin: 20px auto;
+        background-color: #FFFFFFCC;
+        border: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;   
+        width:90vw;
+        padding: 0px 20px;
     }
     .logo{
         padding: 3px 0px 0px 15px;
@@ -280,14 +284,8 @@ span{
         height: 13.5px;
     }
 }
-@media (max-width: 720px){
-    .navMovil{
-        left: 30px;
-    }
-}
 @media (max-width: 390px) {
     .header{
-        width: 390px;
         height: 561px;
     }
     .live-bg{
@@ -295,29 +293,26 @@ span{
     }
     .bgMovil{
         height: 561px;
-        width: auto;
         background-image: url(./assets/gallery/backgroundMovil.png);
     }
     .navMovil{
-        left: 20px;
+        margin: 20px auto;
     }
-    
-    .articleSection {
+    .articleSection{
         margin-top: 40px;
-        width: 390px;
         height: auto;
     }
     .divArticles {
       flex-direction: column;
       align-items: center;
-      justify-content: center;  
+      justify-content: center;
+      margin: 0px;
     }
     .clothes{
-        width: 354px;
+        width: 90vw;
     }
     .banner{
         margin-top: 60px;
-        width: 390px;
         background-image: url(./assets/backgroundmovile2.png);
     }
     .textContainer{
@@ -334,9 +329,6 @@ span{
     }
     .newsletter{
         font-style: italic;
-    }
-    .footer{
-        width: 390px;
     }
     .footer h2{
         font-size: 28px;
@@ -358,4 +350,3 @@ span{
         width: 35%;
     }
 }
-  }
