@@ -289,10 +289,11 @@ span{
         height: 561px;
     }
     .live-bg{
-        display: none;
+        display: none; 
     }
     .bgMovil{
         height: 561px;
+        width:auto;
         background-image: url(./assets/gallery/backgroundMovil.png);
     }
     .navMovil{
