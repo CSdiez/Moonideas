@@ -285,6 +285,20 @@ span{
     }
 }
 @media (max-width: 550px){
+    .header{
+        height: 561px;
+    }
+    .live-bg{
+        display: none; 
+    }
+    .bgMovil{
+        height: 561px;
+        width:auto;
+        background-image: url(./assets/gallery/backgroundMovil.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     .divArticles {
         flex-direction: column;
         align-items: center;
@@ -297,6 +311,9 @@ span{
     .banner{
         margin-top: 60px;
         background-image: url(./assets/backgroundmovile2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .form{
         align-items: center;
@@ -306,27 +323,6 @@ span{
     }
     .form button{
         width: 35%;
-    }
-}
-@media (max-width: 390px) {
-    .header{
-        height: 561px;
-    }
-    .live-bg{
-        display: none; 
-    }
-    .bgMovil{
-        height: 561px;
-        width:auto;
-        background-image: url(./assets/gallery/backgroundMovil.png);
-    }
-    .navMovil{
-        margin: 20px auto;
-    }
-    .articleSection{
-        margin-top: 40px;
-        height: auto;
-        width:auto; 
     }
     .textContainer{
         top: 340px;
@@ -350,4 +346,15 @@ span{
         line-height: normal;
         margin-bottom: 10px;
     }
+}
+@media (max-width: 390px) {
+    .navMovil{
+        margin: 20px auto;
+    }
+    .articleSection{
+        margin-top: 40px;
+        height: auto;
+        width:auto; 
+    }
+
 }
