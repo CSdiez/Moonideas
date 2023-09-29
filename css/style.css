@@ -108,9 +108,6 @@ nav:hover{
     align-items: start;
     padding-left: 30px;
 }
-.navLinks ul li a:hover{
-    font-weight: bold
-}
 .navLinks :hover > ul{
     display: flex;
 }
